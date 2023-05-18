@@ -25,7 +25,7 @@
             >Web<span class="logo-studio-light-bg">Studio</span></a
           >
           <ul class="list menu">
-            <li><a class="link menu-item" href="./index.html">Studio</a></li>
+            <li><a class="link menu-item active-page" href="./index.html">Studio</a></li>
             <li><a class="link menu-item" href="./portfolio.html">Portfolio</a></li>
             <li><a class="link menu-item" href="">Contacts</a></li>
           </ul>
@@ -44,7 +44,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="main-page-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button class="hero-button" type="button" data-modal-open>Order Service</button>
         </div>
       </section>
       <section class="section">
@@ -279,7 +279,7 @@
           <h2 class="secondary-title">Customers</h2>
           <ul class="list customers-list">
             <li class="customers-list-item">
-              <a class="customers-link" href=""
+              <a class="customers-link link" href=""
                 ><svg
                   class="customers-logo"
                   aria-label="ya and ko logotype"
@@ -291,7 +291,7 @@
               </a>
             </li>
             <li class="customers-list-item">
-              <a class="customers-link" href=""
+              <a class="customers-link link" href=""
                 ><svg
                   class="customers-logo"
                   aria-label=" tagline here company logotype"
@@ -303,14 +303,14 @@
               </a>
             </li>
             <li class="customers-list-item">
-              <a class="customers-link" href=""
+              <a class="customers-link link" href=""
                 ><svg class="customers-logo" aria-label=" compaty logotype" width="104" height="56">
                   <use href="./images/icons.svg#icon-company"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-list-item">
-              <a class="customers-link" href=""
+              <a class="customers-link link" href=""
                 ><svg
                   class="customers-logo"
                   aria-label="foster peters logotype"
@@ -322,14 +322,14 @@
               </a>
             </li>
             <li class="customers-list-item">
-              <a class="customers-link" href=""
+              <a class="customers-link link" href=""
                 ><svg class="customers-logo" aria-label="brand logotype" width="104" height="56">
                   <use href="./images/icons.svg#icon-brand"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-list-item">
-              <a class="customers-link" href=""
+              <a class="customers-link link" href=""
                 ><svg
                   class="customers-logo"
                   aria-label="tag line compaty logotype"
@@ -390,6 +390,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-icon" aria-label="close window" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
